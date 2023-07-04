@@ -14,8 +14,7 @@ public class Main {
         String name;
         int age;
         void  speak(){
-            for(int i; i<3; i++){
-            for(int i; i<3; i++){
+            for(int i = 0; i < 3; i++){
                 System.out.println(age + name);
 
             }
