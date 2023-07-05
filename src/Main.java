@@ -4,41 +4,56 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
     {
-        Person person1 = new Person();
-        person1.name = "sss";
-        person1.age = 11;
 
-        person1.speak();
-        System.out.println(person1.calculateYearsToRetiremeny());
-        int ds = 2;
-        int dsa = 3;
+        Scanner ds = new Scanner(System.in);
+        String inputString = ds.nextLine();
+        String[] splitString = inputString.split(" ");
 
-        double a, b;
-        Scanner in = new Scanner(System.in);
-        System.out.print("a = ");
-        a = in.nextDouble();
-        System.out.print("b = ");
-        b = in.nextDouble();
+        int num = Integer.parseInt(splitString[0]);
+        int num1 = Integer.parseInt(splitString[2]);
 
-        double p = 2*(a+b);
-        System.out.println(p);
+        switch (splitString[1]){
+            case "+":
+                System.out.println(new dsa().offers(num,num1));
+                break;
+            case "-":
+                System.out.println(new dsa().subtraction(num,num1));
+                break;
+            case "*":
+                System.out.println(new dsa().multiplication(num,num1));
+                break;
+            case "/":
+                System.out.println(new dsa().division(num,num1));
+                break;
+
+            default:
+                System.out.println("Error");
+                break;
+        }
 
     }
 
-        static class  Person{
-        String name;
-        int age;
+    static class dsa{
+    public int offers(int a, int b){
 
-        int calculateYearsToRetiremeny(){
-            int years = 65-age;
-            return years;
-        }
-        void  speak(){
-            for(int i = 0; i < 3; i++){
-                System.out.println(age + name);
-
-            }
-        }
+        int s = a+b;
+        return s;
     }
+    public int subtraction(int a, int b){
+        int s = a-b;
+        return s;
+    }
+        public int multiplication(int a, int b){
+            int s = a*b;
+            return s;
+        }
+        public int division(int a, int b){
+            int s = a/b;
+            return s;
+        }
+
+
+    }
+
 
 }
