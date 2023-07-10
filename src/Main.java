@@ -17,7 +17,7 @@ public class Main {
                 System.out.println(" формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
                 break;
             }
-            if (splitString.length < 3) {
+            if (splitString.length <= 3) {
 
             } else {
                 System.out.println("строка не является математической операцией ");
