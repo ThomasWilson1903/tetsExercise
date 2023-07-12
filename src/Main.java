@@ -11,17 +11,11 @@ public class Main {
             String inputString = ds.nextLine();
 
             String[] splitString = inputString.split(" ");
-            if (splitString.length == 3) {
 
-            } else {
-                System.out.println(" формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
-                break;
-            }
             if (splitString.length <= 3) {
 
             } else {
-                System.out.println("строка не является математической операцией ");
-                break;
+                throw new InvalidOperationException("формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *");
             }
 
 
@@ -48,9 +42,11 @@ public class Main {
                                 throw new InvalidOperationException("Некорректная арифметическая операция");
                         }
                     } else
-                        System.out.println("вводимое число не входит в диапазон вводимых данных");
+                    throw new InvalidOperationException("");
+
                 } else
-                    System.out.println("вводимое число не входит в диапазон вводимых данных");
+                    throw new InvalidOperationException("");
+
             } else {
                 int num = romanToInteger(splitString[0]);
                 int num1 = romanToInteger(splitString[2]);
@@ -72,14 +68,14 @@ public class Main {
                                 break;
 
                             default:
-                                System.out.println("ошибка оператора вычисления");
-                                Error = true;
-                                break;
+                                throw new InvalidOperationException("Некорректная арифметическая операция");
                         }
                     } else
-                        System.out.println("вводимое число не входит в диапазон вводимых данных");
+                        throw new InvalidOperationException("");
+
                 } else
-                    System.out.println("вводимое число не входит в диапазон вводимых данных");
+                    throw new InvalidOperationException("");
+
             }
 
 
@@ -120,7 +116,7 @@ public class Main {
         return result;
     }
 
-    public static String integerToRoman(int num) {
+    public static String integerToRoman(int num) throws InvalidOperationException {
         if (num > 0) {
             String[] romanSymbols = {
                     "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"
@@ -140,7 +136,9 @@ public class Main {
             }
             return result.toString();
         }
-        return "в римской системе нет отрицательных чисел";
+        else
+            throw new InvalidOperationException("");
+
 
     }
 
