@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32434158-52bf-44e8-86cd-03b12dd199e5" name="Changes" comment="SS" />
+    <list default="true" id="32434158-52bf-44e8-86cd-03b12dd199e5" name="Changes" comment="fixCode">
+      <change afterPath="$PROJECT_DIR$/src/InvalidOperationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,8 +48,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/hdnhd/IdeaProjects/tetsExercise",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
@@ -123,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688550966910</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixCode">
+      <option name="closed" value="true" />
+      <created>1689024781309</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689024781310</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -140,7 +154,8 @@
     <MESSAGE value="ss" />
     <MESSAGE value="first" />
     <MESSAGE value="SS" />
-    <option name="LAST_COMMIT_MESSAGE" value="SS" />
+    <MESSAGE value="fixCode" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixCode" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

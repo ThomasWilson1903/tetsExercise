@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidOperationException {
 
         Scanner ds = new Scanner(System.in);
         boolean Error = false;
@@ -45,9 +45,7 @@ public class Main {
                                 break;
 
                             default:
-                                System.out.println("ошибка оператора вычисления");
-                                Error = true;
-                                break;
+                                throw new InvalidOperationException("Некорректная арифметическая операция");
                         }
                     } else
                         System.out.println("вводимое число не входит в диапазон вводимых данных");
@@ -192,4 +190,5 @@ public class Main {
 
 
     }
+
 }
